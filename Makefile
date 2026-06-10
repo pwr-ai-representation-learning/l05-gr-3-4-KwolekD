@@ -12,4 +12,4 @@ build_image:
 	docker build -t representation_learning -f $(DEVICE).dockerfile .
 
 run_container:
-	docker run --rm $(GPU_FLAG) -p $(PORT):8888 -v `pwd`:/assignment --name representation_learning representation_learning
+	docker run --rm $(GPU_FLAG) -p $(PORT):8888 -v "`pwd`":/assignment --name representation_learning representation_learning
